@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="example2.js"></script>
+    <style>
+      hr {
+            height: 0px;
+            border-style: none;
+            border-top-style: dotted;
+            border-color: black;
+            border-width: 10px;
+
+            width: 20%;
+        }
+        body{
+            background-color:rgb(248, 233, 211);
+            font-family: 'Dancing Script', cursive;
+            
+        }
+    </style>
+</head>
+
+<body>
+   
+   
+    <h1>Scope refers to the availability of variables and functions in certain parts of the code.</h1>
+    <p>In JavaScript, a variable has two types of scope:</p>
+    <ol>
+        <li>Global Scope</li>
+        <li>Local Scope</li>
+    </ol>
+    <hr>
+    <h1 style="text-decoration: underline;">GLOBAL SCOPE</h1>
+
+    <p>Global scope is the entire Javascript execution environment.</p>
+    <p>Any variables assigned without an explicit scope (using the var, let, or const keywords) automatically become
+        global variables. The same is true for functions.</p>
+    <p>A variable declared at the top of a program or outside of a function is considered a global scope variable.</p>
+    <p id="demo">For example , <a href="#" onclick="GE1()">CLICK HERE</a>. </p>
+    <p>The value of a global variable can be changed inside a function. </p>
+    <p id="demo1">For example , <a href="#" onclick="GE2()">CLICK HERE</a>. </p>
+    <p>In JavaScript, a variable can also be used without declaring it. If a variable is used without declaring it, that
+        variable automatically becomes a global variable.</p>
+    <p id="demo2">For example , <a href="#" onclick="GE3()">CLICK HERE</a>. </p>
+    <p>We can prevent variables assigned without an explicit scope from becoming global variables by using Javascript’s
+        “strict” mode.</p>
+
+    <hr>
+    <h1 style="text-decoration: underline;">LOCAL SCOPE</h1>
+    <p>A variable can also have a local scope, i.e it can only be accessed within a function.</p>
+    <p id="demo3">For example , <a href="#" onclick="LV1()">CLICK HERE</a>. </p>
+</body>
+
+</html>
